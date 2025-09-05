@@ -30,7 +30,7 @@
         </p>
         <p>
             <label for="number">Enter a Number : </label>
-            <input type="number" placeholder="enter a number" id="number" name="num">
+            <input type="number" placeholder="enter a number" id="number" name="num" min="1" max="1000" step="2">
         </p>
         <!-- 이 버튼은 제출하지 않음 -->
         <button type="button">Regular button(won't submit)</button>
@@ -82,6 +82,17 @@
                 <option value="veg" selected>Vegetarian</option>
                 <option value="steak">Steak</option>
             </select>
+        </p>
+        <p>
+            <label for="cheese">Amount of Cheese</label>
+            <input type="range" id="cheese" min="1" max="100" value="75" step="7" name="cheese_level">
+        </p>
+
+        <!-- 텍스트 영역 -->
+        <p>
+            <label for="requests">Any Special Requests?</label>
+            <br>
+            <textarea id="requests" rows="10" cols="40" name="Requests?" placeholder="Type something here"></textarea>
         </p>
         <button>Submit</button>
     </form>
