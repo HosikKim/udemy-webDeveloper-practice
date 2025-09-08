@@ -95,6 +95,21 @@
             <textarea id="requests" rows="10" cols="40" name="Requests?" placeholder="Type something here"></textarea>
         </p>
         <button>Submit</button>
+        <h2>Validations Demo</h2>
+        <form action="/dummy">
+            <label for="first">Enter first name</label>
+            <input type="text" name="first" id="first" required>
+            <p>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" minlength="5" maxlength="20" required>
+            </p>
+            <p>
+                <!-- 진짜 e메일 url이 아닌 패턴만 매칭하는 것임 -->
+                <input type="email" placeholder="email" required>
+                <input type="url" placeholder="url" required>
+            </p>
+            <button>Submit</button>
+        </form>
     </form>
 </body>
 
