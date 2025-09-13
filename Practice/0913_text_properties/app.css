@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+    /*폰트 : normal == 400 */
+    font-weight: normal;
+    text-decoration: blue underline wavy;
+    letter-spacing: 15px;
+    /* 첫번째 폰트가 없으면 뒤에가 백업 폰트 */
+    /* font-family: Segoe UI, Futura, Arial; */
+
+    /* 큰 분류를 사용해 각 사용자가 fantasy 분류안의 폰트가있을때 
+    있는 fantasy 폰트를 보여줌 */
+    font-family: fantasy;
+}
+
+p {
+    /* font-weight: bold; */
+}
+
+a {
+    text-decoration: none;
+}
