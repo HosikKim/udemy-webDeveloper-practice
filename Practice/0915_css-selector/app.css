@@ -15,7 +15,7 @@ h2 {
     color: #1d3557;
 }
 
-/* ID 선택자 */
+/* [ID 선택자] */
 #signup {
     background-color: #1d3557;
     color: #f1face;
@@ -25,18 +25,60 @@ span {
     color: #457b9d;
 }
 
-/* 클래스 선택자 */
+/* [클래스 선택자] */
 .tag {
     background-color: #e63946;
     color: #f1faee;
     font-size: 16px;
 }
 
-/* post클래스에 속한 a태그만 적용 */
+/* [자손선택자] post클래스에 속한 a태그만 적용 */
 .post a {
     color: #a8dadc;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 footer a {
     color: red;
+}
+
+/* [인접선택자] h2 다음에오는 button 적용*/
+h2+button {
+    font-size: 20px;
+    background-color: magenta;
+}
+
+/* [직계자손선택자] fotter 바로 하위에있는 a 태그만 적용 */
+footer>a {
+    color: #a8dabc;
+}
+
+/* [속성 선택자] type이 password인 input태그만 적용 */
+input[type="password"] {
+    color: greenyellow;
+}
+
+/* href속성에 google이 포함된 모든 a태그 */
+a[href*="google"] {
+    color: magenta;
+}
+
+/* [가상클래스] 포스트안에 있는 버튼위에 커서가 올라갔을때 적용 */
+.post button:hover {
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.post button:active {
+    background-color: #02c39a;
+}
+
+/* 3번째 post마다 적용 */
+.post:nth-of-type(3n) {
+    background-color: #dfe8dc;
 }
