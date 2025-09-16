@@ -15,6 +15,7 @@ h2 {
     color: #1d3557;
 }
 
+/* ID 선택자 */
 #signup {
     background-color: #1d3557;
     color: #f1face;
@@ -24,8 +25,18 @@ span {
     color: #457b9d;
 }
 
+/* 클래스 선택자 */
 .tag {
     background-color: #e63946;
     color: #f1faee;
     font-size: 16px;
+}
+
+/* post클래스에 속한 a태그만 적용 */
+.post a {
+    color: #a8dadc;
+}
+
+footer a {
+    color: red;
 }
