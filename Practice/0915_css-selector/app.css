@@ -82,3 +82,36 @@ a:hover {
 .post:nth-of-type(3n) {
     background-color: #dfe8dc;
 }
+
+/* [유사 요소] */
+/* h2의 첫번째 글자에 적용 */
+h2::first-letter {
+    font-size: 50px;
+}
+
+p::first-line {
+    color: purple;
+}
+
+/* p태그 선택하면 적용 */
+p::selection {
+    background-color: #fcbf49;
+}
+
+
+/* 특이도 우선순위 */
+/* .post button:hover {
+    background-color: #e63946;
+    color: #f1faee;
+} */
+/* 위 코드와 충돌이 나는 상태
+ 브라우저는 위의 선택자가 더욱 구체적이라고 
+ 특이도를 계산 */
+button:hover {
+    background-color: olive;
+    font-size: 10px;
+}
+
+/* button {
+    background-color: magenta !important;
+} */
