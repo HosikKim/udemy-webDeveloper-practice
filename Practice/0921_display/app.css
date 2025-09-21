@@ -1,0 +1,31 @@
+h1 {
+    background-color: palegoldenrod;
+    border: 1px solid black;
+    width: 300px;
+    padding: 50px;
+    margin: 50px;
+    /* 문서 내엔 있지만 보이지않음 */
+    display: none;
+}
+
+
+span {
+    background-color: paleturquoise;
+    border: 1px solid black;
+    /* display: block; */
+    /* 요소가 인라인이면 width,height 무시 */
+    width: 500px;
+    padding: 50px;
+    /* 인라인 속성은 같은 줄 내용만 밀어냄 margin */
+    margin: 50px;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    background-color: olivedrab;
+    border: 5px solid black;
+    /* inline-block은 width,height 속성 가능 */
+    display: inline-block;
+    margin: 50px;
+}
