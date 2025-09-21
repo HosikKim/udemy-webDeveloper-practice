@@ -1,0 +1,77 @@
+html {
+    font-size: 20px;
+}
+
+#percentages {
+    background-color: #6d6875;
+    width: 800px;
+    height: 800px;
+}
+
+#percentages div {
+    background-color: #e5989b;
+    /* 부모요소의 70,20% */
+    width: 70%;
+    height: 20%;
+}
+
+#ems h1 {
+    font-size: 40px;
+    border: 1px solid black;
+    /* 폰트 크기의 200% */
+    line-height: 200%;
+}
+
+#ems h2 {
+    /* 부모요소의 2배, 부모는 article */
+    /* article 폰트의 2배 */
+    font-size: 2em;
+    /* margin의 em은 요소크기에 따름 40px */
+    margin-left: 1em;
+}
+
+#ems h3 {
+    /* article 폰트의 1.5배 */
+    font-size: 1.5em;
+}
+
+#ems p {
+    font-size: 0.8em;
+}
+
+#ems {
+    font-size: 20px;
+}
+
+button {
+    /* 
+    크기를 px로 지정하면 버튼 크기가 달라짐에 따라 radius 정도도 바뀜
+    em으로 지정하면 항상 같은 정도의 radius 가능
+    */
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    background-color: #12cc7e;
+    color: white;
+}
+
+ul {
+    font-size: 1.5em;
+}
+
+/* rems의 부모요소는 <html lang="en"> 이 부분 */
+#rems h2 {
+    font-size: 3rem;
+}
+
+#rems h3 {
+    font-size: 2rem;
+}
+
+#rems ul {
+    font-size: 0.8rem;
+}
+
+#rems button {
+    font-size: 1.5rem;
+}
