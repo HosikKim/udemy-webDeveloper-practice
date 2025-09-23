@@ -1,0 +1,45 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #3d405b;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+
+#middle {
+    background-color: #81b29a;
+}
+
+/* 가장 기본적인 위치요소 */
+#static #middle {
+    position: static;
+}
+
+/* 문서의 흐름대로 위치를 지정하지만 top,bottom,left,right등으로 위치 조정가능 */
+#relative #middle {
+    position: relative;
+    /* 밑으로 100px 내려감 */
+    top: 50px;
+    left: -50px;
+}
+
+/* absolute middle의 조상 */
+#absolute {
+    position: relative;
+}
+
+/* 문서의 흐름에서 제거되고 공간배정 X */
+/* 가장 가까운 조상의 상대적인 위치 */
+#absolute #middle {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+/* 전체화면을 기준으로 위치 고정 */
+#fixed #middle {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
