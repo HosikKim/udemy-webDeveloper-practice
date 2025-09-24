@@ -1,0 +1,72 @@
+h1 {
+    background-color: #2a9d8f;
+    border: 5px solid #264653;
+    color: #eae2b7;
+    padding: 0.7em;
+    width: 300px;
+    font-size: 1.8em;
+    text-align: center;
+    /* 좌우 여백을 자동으로 설정하면 가운데에 요소가 위치하게됨 */
+    margin: 20px auto;
+    font-family: Courier New;
+    font-weight: lighter;
+}
+
+h1:nth-of-type(2n) {
+    background-color: #e9c46a;
+}
+
+h1:nth-of-type(3n) {
+    background-color: #f4a261;
+}
+
+h1:nth-of-type(4n) {
+    background-color: #e76f51;
+}
+
+section:first-of-type h1:nth-of-type(1) {
+    /* 45도 회전 */
+    transform: rotate(45deg);
+    /* 우하단을 중심으로 회전 */
+    /* transform-origin: bottom right; */
+}
+
+section:first-of-type h1:nth-of-type(2) {
+    /* 크기를 0.6배로 */
+    transform: scale(0.6);
+}
+
+section:first-of-type h1:nth-of-type(3) {
+    /* 오른쪽으로 200px 이동 */
+    transform: translateX(200px);
+}
+
+
+section:first-of-type h1:nth-of-type(4) {
+    /*  왼쪽으로 200px 이동, 위로 50px 이동  */
+    transform: translate(-200px, -50px);
+}
+
+section:nth-of-type(2) h1:nth-of-type(1) {
+    /* 30도 기울이기 */
+    transform: skew(30deg);
+}
+
+section:nth-of-type(2) h1:nth-of-type(2) {
+    /* x 10도, y 5도 기울이기 */
+    transform: skew(10deg, 5deg);
+}
+
+section:nth-of-type(2) h1:nth-of-type(3) {
+    /* 공백으로 나누어 여러 transform을 한번에 적용 가능 */
+    transform: rotate(-20deg) scale(1.3);
+}
+
+section:nth-of-type(2) h1:nth-of-type(4) {
+    transform: translateX(-500px) rotate(0.5turn) scaleY(1.5);
+}
+
+/* 섹션2의 모든요소를 한번에 적용 가능 */
+section:nth-of-type(2) {
+    transform: scale(0.7);
+}
