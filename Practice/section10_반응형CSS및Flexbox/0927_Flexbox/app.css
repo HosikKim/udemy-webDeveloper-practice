@@ -1,0 +1,72 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    background-color: #003049;
+    width: 90%;
+    /* height: 500px; */
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    /* 메인축이 반대로 바뀜 좌->우 에서 우->좌 로 */
+    /* flex-direction: row-reverse; */
+
+    /* 메인축이 상->하 로 바뀜
+    column-reverse = 하 -> 상 */
+    /* flex-direction: column; */
+
+    flex-direction: row;
+    /* [justify-content] 메인축이 기준 */
+    justify-content: center;
+    /* [alingn-items] 교차축이 기준 */
+    align-items: flex-end;
+    /* flex-wrap: wrap; */
+
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+    /* 최대 크기 지정가능 */
+    /* max-width: 300px; */
+    text-align: center;
+    flex-basis: 600px;
+}
+
+/* div:nth-of-type(5) { 
+     단일,개별 요소에 사용 
+    align-self: flex-start;
+}*/
+
+div:nth-of-type(1) {
+    flex-grow: 1;
+    flex-shrink: 3;
+}
+
+div:nth-of-type(5) {
+    flex-grow: 2;
+    flex-shrink: 0;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 300px;
+    display: flex;
+}
+
+main .sidebar {
+    background-color: #6930c3;
+    flex: 1 2 300px;
+}
+
+main .maincontent {
+    background-color: #26b485;
+    flex: 2 1 800px;
+}
