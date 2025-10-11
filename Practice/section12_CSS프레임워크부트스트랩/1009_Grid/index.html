@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Basics</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="display-1 text-center text-primary">The Grid System</h1>
+        <!-- 부트스트랩의 행의 총 공간은 12유닛 -->
+        <div class="row">
+            <!-- 유닛을 지정하는 법은 col-'숫자' -->
+            <div class="col-2 badge-success">I AM 2 UNITS</div>
+            <div class="col-8 badge-danger">I AM 8 UNITS</div>
+            <div class="col-2 badge-success">I AM 2 UNITS</div>
+        </div>
+
+        <div class="row">
+            <div class="col-3 badge-info">I AM 3 UNITS</div>
+            <div class="col-6 badge-warning">I AM 6 UNITS</div>
+            <div class="col-3 badge-info">I AM 3 UNITS</div>
+        </div>
+
+        <div class="row">
+            <div class="col badge-primary">I AM AUTO SIZED</div>
+            <div class="col badge-secondary">I AM AUTO SIZED</div>
+            <div class="col-8 badge-primary">I AM AUTO SIZED</div>
+        </div>
+
+        <h2 class="display-4">Responsive Grid</h2>
+        <div class="row">
+            <!-- medium 중단점이 끝나면 6유닛을 차지
+             그 전에는 가로 전체를 차지 -->
+            <!-- xl에서는 3유닛 차지 -->
+            <div class="col-md-6 col-xl-3 bg-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda veritatis aspernatur, fuga
+                perspiciatis laboriosam consectetur adipisci aliquid rerum ea, sed quos incidunt quam ut at nulla iusto
+                soluta nihil doloribus.
+            </div>
+            <div class="col-md-6 col-xl-3 bg-success">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda veritatis aspernatur, fuga
+                perspiciatis laboriosam consectetur adipisci aliquid rerum ea, sed quos incidunt quam ut at nulla iusto
+                soluta nihil doloribus.
+            </div>
+            <div class="col-md-6 col-xl-3 bg-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda veritatis aspernatur, fuga
+                perspiciatis laboriosam consectetur adipisci aliquid rerum ea, sed quos incidunt quam ut at nulla iusto
+                soluta nihil doloribus.
+            </div>
+            <div class="col-md-6 col-xl-3 bg-success">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda veritatis aspernatur, fuga
+                perspiciatis laboriosam consectetur adipisci aliquid rerum ea, sed quos incidunt quam ut at nulla iusto
+                soluta nihil doloribus.
+            </div>
+
+            <h2>Grid Alignment</h2>
+            <div class="row align-items-center">
+                <div class="col-3 bg-danger">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam repellat cum,
+                    maiores mollitia harum doloribus quia aliquam quisquam quam odit soluta modi fuga quo? Alias
+                    adipisci fuga accusamus ipsum ratione.</div>
+                <div class="col-3 badge-warning">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam repellat
+                    cum,
+                    maiores mollitia harum doloribus quia aliquam quisquam quam odit soluta modi fuga quo? Alias
+                    adipisci fuga accusamus ipsum ratione. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Iusto a nostrum magni nemo maiores amet nisi, at quos sed quasi! Facilis voluptatum obcaecati minima
+                    itaque debitis quibusdam odio, exercitationem corrupti!
+                    Amet voluptate atque facere odio corrupti iure, aliquid mollitia optio perspiciatis nostrum, quo
+                    dolorum! Veniam libero hic distinctio. Qui laboriosam, aut molestiae impedit asperiores ipsam odit
+                    iusto est repellendus tempora?</div>
+                <div class="col-3 bg-success">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam repellat
+                    cum,
+                    maiores mollitia harum doloribus quia aliquam quisquam quam odit soluta modi fuga quo? Alias
+                    adipisci fuga accusamus ipsum ratione. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Porro possimus aliquid temporibus alias tempora unde amet architecto illum consequatur, quia earum
+                    commodi ad voluptatibus soluta at voluptatem cum? Reiciendis, enim?</div>
+
+                <!-- 파란 박스만 end 정렬 -->
+                <div class="col-3 bg-info align-self-end">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam
+                    repellat cum,
+                    maiores mollitia harum doloribus quia aliquam quisquam quam odit soluta modi fuga quo? Alias
+                    adipisci fuga accusamus ipsum ratione.</div>
+            </div>
+
+
+            <h3>Justify Content</h3>
+            <!-- justify는 수평정렬 -->
+            <div class="row border justify-content-center justify-content-lg-start justify-content-xl-between">
+                <div class="col-4 bg-primary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus molestias adipisci,
+                    consequuntur quo architecto blanditiis deserunt veritatis aspernatur iste exercitationem quidem illo
+                    illum porro, nam commodi, repellendus sint rerum fugit!
+                </div>
+                <div class="col-4 bg-info ">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus molestias adipisci,
+                    consequuntur quo architecto blanditiis deserunt veritatis aspernatur iste exercitationem quidem illo
+                    illum porro, nam commodi, repellendus sint rerum fugit!
+                </div>
+            </div>
+            <!-- no-gutters(공백) 제거 -->
+            <div class="row no-gutters">
+                <div class="col-xl-4 col-md-6">
+                    <img class="img-fluid"
+                        src="https://images.unsplash.com/photo-1589595363745-d842812a9db7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                        alt="">
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <img class="img-fluid"
+                        src="https://images.unsplash.com/photo-1511692277506-3be3a7ab1686?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                        alt="">
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <img class="img-fluid"
+                        src="https://images.unsplash.com/photo-1497206365907-f5e630693df0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                        alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- 부트스트랩 자바스크립트 파일 -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
