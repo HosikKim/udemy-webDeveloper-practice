@@ -1,0 +1,22 @@
+# Primitiv Types(원시타입)
+
+- Number
+    - 양수, 음수, 정수, 소수
+    - 0 / 0 같은경우는 NaN타입(Not a Number)
+- String
+- Boolean
+- Null
+- Undefined
+
+# Variables(변수)
+
+- let
+- const
+    - 상수, 변하지 않는 값
+- var
+    - let의 옛날 방식
+
+## 변수 명명 규칙
+
+- 첫 글자에 숫자 X
+- 카멜 케이스 사용(ex. isNumber)
